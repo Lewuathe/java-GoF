@@ -1,4 +1,5 @@
-public interface  Builder {
+public abstract class Builder {
+	//	protected abstract Boolean isCalledTitle;
 	public abstract void makeTitle(String title);
 	public abstract void makeString(String str);
 	public abstract void makeItems(String[] items);
