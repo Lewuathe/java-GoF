@@ -8,7 +8,8 @@ public class Main {
 		int seed1 = Integer.parseInt(args[0]);
 		int seed2 = Integer.parseInt(args[1]);
 		Player player1 = new Player("Taro", new WinningStrategy(seed1));
-		Player player2 = new Player("Hana", new ProbStrategy(seed2));
+		//		Player player2 = new Player("Hana", new ProbStrategy(seed2));
+		Player player2 = new Player("Random", new RandomStrategy(seed2));
 		for (int i = 0; i < 10000; i++) {
 			Hand nextHand1 = player1.nextHand();
 			Hand nextHand2 = player2.nextHand();
