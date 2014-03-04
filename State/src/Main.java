@@ -11,7 +11,7 @@ public class Main {
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
-                    
+
                 }
             }
         }
