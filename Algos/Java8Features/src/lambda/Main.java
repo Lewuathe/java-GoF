@@ -31,6 +31,11 @@ public class Main {
         plist.stream().filter(p -> p.getGender() == Person.Sex.FEMALE)
                 .map(p -> p.getName())
                 .forEach(s -> System.out.println("Ms. " + s));
+        double ave = plist.stream().filter(p -> p.getAge() >= 18)
+                .mapToInt(Person::getAge)
+                .average()
+                .getAsDouble();
+        System.out.println(ave);
     }
 
     public static void printPerson(List<Person> plist) {
